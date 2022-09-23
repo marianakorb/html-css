@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        legend {
+            font-weight: bold;
+            background-color: rgba(172, 255, 47, 0.562);
+            padding: 5px;
+            border-radius: 20px;
+        }
+        fieldset {
+            font-weight: bold;
+            border: 1px solid green;
+        }
+        p {
+            color: rgb(65, 63, 63);
+        }
+        p:hover {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.js">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome">
+            </p>
+            <p>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" required pattern="^\(\(d{2}\)\d{4,5}-\d{4}$">
+            </p>
+        </fieldset>
+        <!-- ESTUDAR SOBRE RegEx (expressões regulares)-->
+    </form>
+</body>
+</html>
