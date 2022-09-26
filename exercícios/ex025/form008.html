@@ -16,11 +16,11 @@
     <form action="cadastro.js" method="get" autocomplete="on">
         <p>
             <label for="n1">Número 1: </label>
-            <input type="number" name="n1" id="n1" min="0" max="50" required oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)">
+            <input type="number" name="n1" id="n1" min="0" max="50" required oninput="soma.innerHTML = Number(n1.value) * Number(n2.value)">
         </p>
         <p>
             <label for="n2">Número 2: </label>
-            <input type="number" name="n2" id="n2" min="0" max="50" oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)">
+            <input type="number" name="n2" id="n2" min="0" max="50" oninput="soma.innerHTML = Number(n1.value) * Number(n2.value)">
         </p>
         <p>
             <label for="soma">Soma:</label>
